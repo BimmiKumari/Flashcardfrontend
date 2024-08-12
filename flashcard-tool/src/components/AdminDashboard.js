@@ -41,7 +41,7 @@ const Dashboard = () => {
         initialData={editingFlashcard}
       />
       <ul className='uldesign' >
-        {flashcards.map(flashcard => (
+        {Array.isArray(flashcards)&&flashcards?.map(flashcard => (
           <li key={flashcard.id}>
             {flashcard.question}
             <button onClick={() => setEditingFlashcard(flashcard)} className='button' style={{margin:'10px'}}>Edit</button>
