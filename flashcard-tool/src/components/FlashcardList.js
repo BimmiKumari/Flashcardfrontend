@@ -25,8 +25,10 @@ const FlashcardList = () => {
       {flashcards.length > 0 && (
         <div>
           <Flashcard flashcard={flashcards[currentIndex]} />
-          <button onClick={handlePrevious}>Previous</button>
-          <button onClick={handleNext}>Next</button>
+          <div className='button-back'>
+          <button onClick={handlePrevious} className='button'>Previous</button>
+          <button onClick={handleNext} className='button'>Next</button>
+        </div>
         </div>
       )}
     </div>

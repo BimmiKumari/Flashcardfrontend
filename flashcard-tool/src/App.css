@@ -36,3 +36,141 @@
     transform: rotate(360deg);
   }
 }
+Link:hover {
+  color: green;
+}
+.navbar
+{
+  margin:auto;
+  display:flex;
+  justify-items: center;
+  align-items: center;
+  background-color:  rgba(9, 9, 9, 0.515);
+  width:500px;
+  height:10px;
+  font-weight: 400px;
+  font-size: xx-large;
+  color:white;
+  padding: 20px;
+  justify-content: space-between;
+}
+.glowing-text {
+  background: rgba(0, 0, 0, 0.3); 
+  backdrop-filter: blur(10px); 
+  -webkit-backdrop-filter: blur(10px); 
+  border-radius: 10px; 
+  padding: 20px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+  color: white; 
+  font-size: 3em; 
+  font-weight: bold; 
+  text-shadow: 
+    0 0 2px white,
+    0 0 3px white, 
+    0 0 15px white, 
+    0 0 10px white;
+  animation: glow-animation 1.5s ease-in-out infinite; 
+}
+
+
+@keyframes glow-animation {
+  0% {
+    text-shadow: 
+      0 0 5px white, 
+      0 0 3px white, 
+      0 0 5px white, 
+      0 0 10px white;
+  }
+  50% {
+    text-shadow: 
+      0 0 5px white, 
+      0 0 6px white, 
+      0 0 30px white, 
+      0 0 20px white;
+  }
+  60% {
+    text-shadow: 
+      0 0 90px white, 
+      0 0 100px white, 
+      0 0 170px white, 
+      0 0 130px white;
+  }
+}
+
+.button {
+  background-color: #007bff; 
+  color: white;
+  border: none;
+  border-radius: 5px; 
+  padding: 10px 20px; 
+  font-size: 16px; 
+  font-weight: bold; 
+  cursor: pointer; 
+  transition: all 0.3s ease; 
+  text-align: center; 
+  text-decoration: none; 
+  display: inline-block; 
+}
+
+
+.button:hover {
+  background-color: #0056b3; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  transform: translateY(-3px); 
+}
+
+
+.button:focus {
+  outline: none; 
+  box-shadow: 0 0 0 3px rgba(38, 143, 255, 0.5); 
+}
+.button-back{
+  margin:auto;
+  display:flex;
+  justify-items: center;
+  align-items: center;
+  background-color:  rgba(9, 9, 9, 0.515);
+  width:500px;
+  height:10px;
+  font-weight: 400px;
+  font-size: xx-large;
+  color:white;
+  padding: 20px;
+  justify-content: space-between;
+}
+.dash{
+  background-color: white;
+  width:500px;
+  height:400px;
+  margin:auto;
+  padding:10px;
+  color: black;
+  overflow-y:scroll
+}
+.input-field {
+  width: 100%; /* Full-width input */
+  max-width: 400px; /* Maximum width */
+  padding: 10px 15px; /* Spacing inside the input */
+  font-size: 16px; /* Font size */
+  border: 2px solid #ccc; /* Border color */
+  border-radius: 5px; /* Rounded corners */
+  background-color: #fff; /* Background color */
+  color: #333; /* Text color */
+  transition: all 0.3s ease; /* Smooth transition for focus and hover effects */
+  box-sizing: border-box; /* Ensure padding and border are included in width */
+}
+
+/* Focus Effect */
+.input-field:focus {
+  border-color: #007bff; /* Highlight border color on focus */
+  outline: none; /* Remove default focus outline */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Custom focus shadow */
+}
+
+/* Hover Effect */
+.input-field:hover {
+  border-color: #007bff; /* Border color change on hover */
+}
+.uldesign{
+  padding: 20px;
+}

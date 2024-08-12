@@ -19,9 +19,11 @@ const FlashcardForm = ({ onSubmit, initialData }) => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <div >
+    <form onSubmit={handleSubmit} >
       <input
         type="text"
+        className='input-field'
         value={question}
         onChange={(e) => setQuestion(e.target.value)}
         placeholder="Question"
@@ -29,13 +31,15 @@ const FlashcardForm = ({ onSubmit, initialData }) => {
       />
       <input
         type="text"
+        className='input-field'
         value={answer}
         onChange={(e) => setAnswer(e.target.value)}
         placeholder="Answer"
         required
       />
-      <button type="submit">Submit</button>
+      <button type="submit" className='button' style={{margin:'10px'}}>Submit</button>
     </form>
+    </div>
   );
 };
 

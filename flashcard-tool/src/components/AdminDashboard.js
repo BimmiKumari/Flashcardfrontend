@@ -34,18 +34,18 @@ const Dashboard = () => {
   };
 
   return (
-    <div>
-      <h2>Dashboard</h2>
+    <div className='dash' >
+      <h5>Add edit and delete your question here..</h5>
       <FlashcardForm 
         onSubmit={editingFlashcard ? handleEdit : handleAdd}
         initialData={editingFlashcard}
       />
-      <ul>
+      <ul className='uldesign' >
         {flashcards.map(flashcard => (
           <li key={flashcard.id}>
             {flashcard.question}
-            <button onClick={() => setEditingFlashcard(flashcard)}>Edit</button>
-            <button onClick={() => handleDelete(flashcard.id)}>Delete</button>
+            <button onClick={() => setEditingFlashcard(flashcard)} className='button' style={{margin:'10px'}}>Edit</button>
+            <button onClick={() => handleDelete(flashcard.id)} className='button'>Delete</button>
           </li>
         ))}
       </ul>
